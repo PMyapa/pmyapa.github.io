@@ -578,6 +578,75 @@ a:hover, a:active, a:focus {
 
 
 /*---------------------------------------
+  portfolio             
+-----------------------------------------*/
+
+.w3-animate-top{
+	position:relative;
+	animation:animatetop 0.4s;
+	padding-bottom: 50px}
+	@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+
+
+.portfolio-page-header {
+    position: relative;
+    margin-bottom: 45px;
+    padding: 50px 0 90px 0;
+    text-align: center;
+    background: #3486d8;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 100px;
+	float:left;
+	display: table;	
+    padding: 50px 0 90px 0;
+	
+}
+
+.poitem {
+	min-width: 992px;
+	position: relative;
+	
+}
+
+.poitem img,
+.poitem video {
+	width: 50%;	
+    padding-right: 15px;
+    padding-left: 15px;	
+	float:left;	
+    margin-bottom: 25px;
+}
+
+/* Styles for the category selection */
+.category-label,
+.category-select {
+	margin: 16px 16px 16px 19px;
+	font-size: 18px;
+	color: #000000;
+	font-weight: normal;
+}
+
+.category-select {
+	padding: 5px 10px;
+	background: #3486d8f5;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	outline: none;
+}
+
+.category-select option {
+	background: #3486d8f5;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+/*---------------------------------------
   FOOTER              
 -----------------------------------------*/
 

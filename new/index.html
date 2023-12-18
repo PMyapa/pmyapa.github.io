@@ -75,7 +75,7 @@
                <div class="col-md-8 col-sm-12">
                     <div class="home-text">
                          <h1>Software Developer and 3D Artist</h1>
-                         <p>Bringing Your Imagination to Life with 3D Modeling, Animation, and Game Development.</p>
+                         <p>Bringing Your Imagination to Life with 3D animations and Games</p>
                          <ul class="section-btn">
                               <a href="#footer" class="smoothScroll"><span data-hover="Contact">Contact</span></a>
                          </ul>
@@ -134,8 +134,8 @@
                          
                               <div class="project-overlay">
                                    <div class="project-info">
-                                        <h1>Beautiful Women</h1>
-                                        <h3>Click to pop up!</h3>
+                                        <h1>3D Modeling</h1>
+                                        <h3>3D models for Games and Animations <br> Realistic 3D Product modeling </h3>
                                    </div>
                               </div>
                          </a>
@@ -150,8 +150,8 @@
                          
                               <div class="project-overlay">
                                    <div class="project-info">
-                                        <h1>Nulla efficitur quam</h1>
-                                        <h3>Sed ligula accumsan</h3>
+                                        <h1>3D Animations</h1>
+                                        <h3>3D product animations <br> 3D animated explainer videos</h3>
                                    </div>
                               </div>
                          </a>
@@ -166,8 +166,8 @@
                          
                               <div class="project-overlay">
                                    <div class="project-info">
-                                        <h1>Large Sea Wave</h1>
-                                        <h3>Nam feugiat dui in nisi</h3>
+                                        <h1>Game Development</h1>
+                                        <h3>PC game development <br> Mobile game development</h3>
                                    </div>
                               </div>
                          </a>
@@ -182,8 +182,8 @@
                          
                               <div class="project-overlay">
                                    <div class="project-info">
-                                        <h1>Lorem ipsum dolor</h1>
-                                        <h3>Mollis aliquam faucibus urna</h3>
+                                        <h1>Software Development</h1>
+                                        <h3>3D web development <br> AR/VR applications development</h3>
                                    </div>
                               </div>
                          </a>
@@ -252,6 +252,37 @@
                <div class="col-md-offset-3 col-md-6 col-sm-12">
                     <div class="section-title">
                          <h1>Portfolio</h1>
+						 
+					</div>
+							<div class="w3-content w3-section" style="max-width:500px">
+								  <img class="mySlides w3-animate-top" src="images/project-image3.jpg" style="width:100%">
+								  <img class="mySlides w3-animate-top" src="images/project-image3.jpg" style="width:100%">
+								  <img class="mySlides w3-animate-top" src="images/project-image3.jpg" style="width:100%">
+								  <img class="mySlides w3-animate-top" src="images/project-image3.jpg" style="width:100%">
+							</div>
+
+								<script>
+								var myIndex = 0;
+								carousel();
+
+								function carousel() {
+								  var i;
+								  var x = document.getElementsByClassName("mySlides");
+								  for (i = 0; i < x.length; i++) {
+									x[i].style.display = "none";  
+								  }
+								  myIndex++;
+								  if (myIndex > x.length) {myIndex = 1}    
+								  x[myIndex-1].style.display = "block";  
+								  setTimeout(carousel, 2500);    
+								}
+								</script>						 
+					 
+								<ul class="section-btn">
+									  <a href="./portfolio.html" class="smoothScroll"><span data-hover="See All">See All</span></a>
+								</ul>
+						 
+							
                     </div>
                </div>
 
