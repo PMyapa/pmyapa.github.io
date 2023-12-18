@@ -596,30 +596,6 @@ a:hover, a:active, a:focus {
     background: #3486d8;
 }
 
-.gallery {
-	display: flex;
-	flex-wrap: wrap;
-	margin-left: 100px;
-	float:left;
-	display: table;	
-    padding: 50px 0 90px 0;
-	
-}
-
-.poitem {
-	min-width: 992px;
-	position: relative;
-	
-}
-
-.poitem img,
-.poitem video {
-	width: 50%;	
-    padding-right: 15px;
-    padding-left: 15px;	
-	float:left;	
-    margin-bottom: 25px;
-}
 
 /* Styles for the category selection */
 .category-label,

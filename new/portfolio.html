@@ -84,8 +84,10 @@
     </select>
 </div>
 
-<div class="gallery" id="gallery">
-    <!-- Your media items will be dynamically added here -->
+<div class="container">
+	<div class="row" id="gallery">
+		<!-- Your media items will be dynamically added here -->
+	</div>
 </div>
 
 <script>
@@ -111,11 +113,11 @@
         // Populate the gallery with the filtered media items
         filteredMedia.forEach(poitem => {
             const mediaElement = poitem.src.endsWith('.mp4')
-                ? `<video controls><source src="${poitem.src}" type="video/mp4"></video>`
-                : `<img src="${poitem.src}" alt="media">`;
+                ? `<video style="width: 100%;	margin-bottom: 25px;" controls><source src="${poitem.src}" type="video/mp4" ></video>`
+                : `<img style="width: 100%;	margin-bottom: 25px;" src="${poitem.src}" alt="media" >`;
 
             const galleryItem = document.createElement('div');
-            galleryItem.className = 'poitem';
+            galleryItem.className = 'col-md-6 col-sm-6';
             galleryItem.innerHTML = mediaElement;
             gallery.appendChild(galleryItem);
         });
