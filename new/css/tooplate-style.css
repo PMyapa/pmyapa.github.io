@@ -678,6 +678,79 @@ footer .copyright-text {
   transform: scale(1.2);
 }
 
+.feelance-icon{
+  position: relative;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.feelance-icon li {
+  display: inline-block;
+  list-style: none;
+}
+
+.feelance-icon li button.fiverr{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #1dbf73;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  width: 132px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.feelance-icon li button.pph{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #ff7300;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  width: 132px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.feelance-icon li button a {
+  color: #ffffff;
+}
+
+.feelance-icon li button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.feelance-icon li button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.feelance-icon li button:hover span {
+  padding-right: 12px;
+}
+
+.feelance-icon li button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+  
+  
+
 
 /*---------------------------------------
   MOBILE RESPONSIVE              
@@ -715,6 +788,13 @@ footer .copyright-text {
   footer .social-icon {
     margin-top: 32px;
   }
+  footer .feelance-icon {
+    margin-top: 32px;
+  }
+  
+  
+  
+  
 }
 
 @media (max-width: 770px) {
