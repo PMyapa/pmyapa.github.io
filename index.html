@@ -74,8 +74,8 @@
 
                <div class="col-md-8 col-sm-12">
                     <div class="home-text">
-                         <h1>Software Developer and 3D Artist</h1>
-                         <p>Bringing Your Imagination to Life with 3D animations and Games</p>
+                         <h1>PM Yapa: 3D and Software Solutions</h1>
+                         <p>Bringing Your Imagination to Life with 3D animations, Games and Applications</p>
                          <ul class="section-btn">
                               <a href="#footer" class="smoothScroll"><span data-hover="Contact">Contact</span></a>
                          </ul>
@@ -266,29 +266,33 @@
                          <h1>Portfolio</h1>
 						 
 					</div>
-							<div class="w3-content w3-section" style="max-width:500px">
-								  <img class="mySlides w3-animate-top" src="images/ppa0001.jpg" style="width:100%">
-								  <img class="mySlides w3-animate-top" src="images/ppa0002.jpg" style="width:100%">
-								  <img class="mySlides w3-animate-top" src="images/ppa0003.jpg" style="width:100%">
-								  <img class="mySlides w3-animate-top" src="images/ppa0004.jpg" style="width:100%">
-							</div>
+							<div class="slider-container">
+  <div class="w3-content w3-section">
+    <img class="mySlides w3-animate-top" src="images/ppa0001.jpg" style="width: 100%">
+    <img class="mySlides w3-animate-top" src="images/ppa0002.jpg" style="width: 100%">
+    <img class="mySlides w3-animate-top" src="images/ppa0003.jpg" style="width: 100%">
+    <img class="mySlides w3-animate-top" src="images/ppa0004.jpg" style="width: 100%">
+  </div>
+</div>
 
-								<script>
-								var myIndex = 0;
-								carousel();
+<script>
+  var myIndex = 0;
+  carousel();
 
-								function carousel() {
-								  var i;
-								  var x = document.getElementsByClassName("mySlides");
-								  for (i = 0; i < x.length; i++) {
-									x[i].style.display = "none";  
-								  }
-								  myIndex++;
-								  if (myIndex > x.length) {myIndex = 1}    
-								  x[myIndex-1].style.display = "block";  
-								  setTimeout(carousel, 2500);    
-								}
-								</script>						 
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {
+      myIndex = 1;
+    }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(carousel, 2500);
+  }
+</script>						 
 					 
 								<ul class="section-btn">
 									  <a href="./portfolio.html" class="smoothScroll"><span data-hover="See All">See All</span></a>

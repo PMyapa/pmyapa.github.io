@@ -581,11 +581,37 @@ a:hover, a:active, a:focus {
   portfolio             
 -----------------------------------------*/
 
-.w3-animate-top{
-	position:relative;
-	animation:animatetop 0.4s;
-	padding-bottom: 50px}
-	@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.slider-container {
+    max-width: 500px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .w3-content {
+    max-width: 100%;
+  }
+
+  .mySlides {
+    width: 100%;
+    height: auto;
+  }
+
+  .w3-animate-top {
+    position: relative;
+    animation: animatetop 0.4s;
+    padding-bottom: 50px;
+  }
+
+  @keyframes animatetop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
 
 
 .portfolio-page-header {
