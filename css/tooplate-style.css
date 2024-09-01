@@ -423,7 +423,7 @@ a:hover, a:active, a:focus {
 }
 
 .project-overlay {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.2);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -431,13 +431,15 @@ a:hover, a:active, a:focus {
   right: 0;
   bottom: 0;
   left: 0;
-  opacity: 0;
+  opacity: 0.5;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
 }
 
 .project-info {
-  padding: 12em 0;
+  padding: 16em 0;  
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
 }
 
 .project-item img {
@@ -460,7 +462,12 @@ a:hover, a:active, a:focus {
 }
 
 .project-item:hover .project-overlay {
+  background: rgba(0,0,0,0.5);
   opacity: 1;
+}
+
+.project-item:hover .project-info {
+  padding: 12em 0;
 }
 
 
